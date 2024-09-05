@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    background-image:url(../assets/background\ 2.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+   margin-bottom: 3%;
+}
+
+header{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px;
+    border-bottom: solid;
+    color: aliceblue;
+    
+}
+.nav a{
+    margin: 30px;
+    font-size: 130%;
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    color: white;
+}
+
+
+
+.main-image{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 50%;
+    grid-row: 2/3;
+    margin: 100px;
+    margin-top: 150px;
+}
+
+.home-main{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+ .home-top{
+    margin-bottom: 50px;
+    font-size: 70px;
+ }
+ .home-mid{
+    font-size: 70px;
+ }
+ .home-bottom{
+    font-size: 30px;
+ }
+
+.about-content{
+    grid-row: 2/3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-top{
+    font-size: 60px;
+    margin-right:22vw;
+    margin-bottom: 20px;
+}
+.about-mid{
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.skills-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+    line-height: 8vh;
+    
+}
+ .skills-top{
+    margin-right: 100px;
+}
+.skills-mid{
+    margin-right: 145px;
+}
+.skills-mid-bottom{
+    margin-left:60px
+}
+.skills-bottom{
+   margin-left:90px
+} 
+.png-image{
+    width: 30vw;
+    height: 50vh;
+    grid-row: 2/3;
+    margin: 100px;
+    margin-top: 150px;
+}
+
+
+.contact-content{
+     display: flex;
+     justify-content: center; 
+      margin-left: 10rem;
+    flex-direction: column;
+    color: white;
+    font-size: 2.5em;
+    line-height: 8vh;
+}
+.contact-content div{
+    text-align: left;
+}
+.number{
+    margin-left: 1.2rem;
+}
+.email{
+    margin-left: 6rem;
+}
+.address{
+    margin-left: 3.7rem;
+}
+.add2{
+    margin-left: 13.7rem;
+}
+.add3{
+    margin-left:13.5rem;
+}
+
+ .footer-content{
+    grid-row:3/4;
+    grid-column: 1/4;
+ }
+ .insta{
+    border-radius: 50%;
+    height: 8vh;
+}
+.facebook{
+    border-radius: 50%;
+    height: 8vh;
+}
+.twitter{
+    border-radius: 50%;
+    height: 8vh;
+}
+.footer-content a{
+    margin: 0.5rem;
+}
