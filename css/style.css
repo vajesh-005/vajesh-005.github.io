@@ -170,6 +170,7 @@ a:hover{
 }
 
 
+
 @media screen and(max-width:800px) {
     nav ul{
         position: sticky;
@@ -184,7 +185,11 @@ a:hover{
     overflow-y: hidden;
 }
 
-
+.email-hover:hover{
+    background-color: grey;
+    border-radius: 10px 1px 10px 1px;
+   
+}
 .container-fluid{
     background-image: url(../assets/background\ 2.jpg);
     background-repeat: no-repeat;
@@ -214,6 +219,23 @@ nav a:hover{
     height: 70px;
     width: 70px;
     
+}
+.progress{
+    height: 40px;
+    width: 40vw;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+.progress-bar{
+    border-radius: 1px 50px 50px 1px;
+    background-color:#3a3a3a;
+    color: black;
+    font-weight: bolder;
+    
+}
+.skill-top:hover{
+    background-color: grey;
+    border-radius: 10px;
 }
 /* h1{
     font-size: 75px !important;
