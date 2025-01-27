@@ -1,258 +1,261 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    
-}
-html{
-    scroll-behavior: smooth;
-}
-
-
-.container{
-    display: grid;
-    grid-template-columns: 60vw 40vw;
-    grid-template-rows: 10vh 80vh 10vh;
-    background-image:url(../assets/background\ 2.jpg );
-    background-repeat: no-repeat;
-    background-size: cover;
-   margin-bottom: 3%;
-}
-
-header{
-    grid-column: 1/4;
-    display: flex;
-    justify-content: flex-end;
-    margin-top:30px;
-    border-bottom: solid;
-    color: aliceblue;
-    
-}
-.nav a{
-    margin: 30px;
-    font-size: 130%;
-    text-decoration: none;
-    color: grey;
-}
-a:hover{
-    color: white;
-}
-
-
-
-.main-image{
-    width: 30vw;
-    height: 50vh;
-    border-radius: 50%;
-    grid-row: 2/3;
-    margin: 100px;
-    margin-top: 150px;
-}
-
-.home-main{
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
- .home-top{
-    margin-bottom: 50px;
-    font-size: 70px;
- }
- .home-mid{
-    font-size: 70px;
- }
- .home-bottom{
-    font-size: 30px;
- }
-
-.about-content{
-    grid-row: 2/3;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.about-top{
-    font-size: 60px;
-    margin-right:22vw;
-    margin-bottom: 20px;
-}
-.about-mid{
-    font-size: 40px;
-    margin-left: 100px;
-}
-
-.skills-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-size: 40px;
-    line-height: 8vh;
-    
-}
- .skills-top{
-    margin-right: 100px;
-}
-.skills-mid{
-    margin-right: 145px;
-}
-.skills-mid-bottom{
-    margin-left:60px
-}
-.skills-bottom{
-   margin-left:90px
-} 
-.png-image{
-    width: 30vw;
-    height: 50vh;
-    grid-row: 2/3;
-    margin: 100px;
-    margin-top: 150px;
-}
-
-
-.contact-content{
-     display: flex;
-     justify-content: center; 
-      margin-left: 10rem;
-    flex-direction: column;
-    color: white;
-    font-size: 2.5em;
-    line-height: 8vh;
-}
-.contact-content div{
-    text-align: left;
-}
-.number{
-    margin-left: 1.2rem;
-}
-.email{
-    margin-left: 6rem;
-}
-.address{
-    margin-left: 3.7rem;
-}
-.add2{
-    margin-left: 13.7rem;
-}
-.add3{
-    margin-left:13.5rem;
-}
-
- .footer-content{
-    grid-row:3/4;
-    grid-column: 1/4;
- }
- .insta{
-    border-radius: 50%;
-    height: 8vh;
-}
-.facebook{
-    border-radius: 50%;
-    height: 8vh;
-}
-.twitter{
-    border-radius: 50%;
-    height: 8vh;
-}
-.footer-content a{
-    margin: 0.5rem;
-} */
-
 *{
-    overflow-x: hidden;
-}
-
-/* @media screen and(max-width:800px) {
-    nav ul{
-        position: sticky;
-        height: 10px;
-    }
-    body{
-        overflow-x: hidden;
-    }
+    margin: 0;
+    padding: 0; 
     
-} */
-
-
-.h1,.h5{
-    overflow-y: hidden;
-}
-
-.email-hover:hover{
-    background-color: grey;
-    border-radius: 10px 1px 10px 1px;
-   
-}
-.container-fluid{
-    background-image: url(../assets/background\ 2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
 }
 body{
-    overflow-x: hidden;
+  background-color: #000;
 }
-.parent{
-    position:relative;
+#home , #about , #learning , #contact{
+    height: 100vh;
+    margin-bottom: 3px;
+background:linear-gradient(220deg , #291651 5% , #000 40%) ;
+}
+nav{
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+nav ul {
+    list-style: none;
+
+    display: flex;
+margin-left: 20px;
+margin-right: 20px;
+  }
+.title{
+font-family: poppins;
+font-weight: bolder;
+margin-left: 20px;
+font-size: 20px;
+  background: linear-gradient(to right , #291651 , #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  nav ul li {
+    position: relative;
+    margin-right:40px ;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #d3dae0;
+
+  }
+
+  nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px; 
+    background-color: #fff; 
+    transition: width 0.4s ease; 
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+
+  .home-container{
+    height: 100vh;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .my-info{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 45%;
+    display: flex; 
+    flex-direction: column; 
+    gap: 25px; 
+  }
+.intro{
+font-size: 20px;  
+  color: #b0b5bb;
+}
+.name{
+  background: linear-gradient(to right , #291651 , #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+.thought{
+  color:#b0b5bb;
+  font-size: 30px;
+}
+.icons{
+  display: flex;
+  gap: 20px;
+}
+i{
+  font-size: 35px;
+  color: rgb(41, 22, 81);
+}
+i:hover{
+  color: #ccc;
+}
+#about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+.about-info{
+  width: 45%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: rgb(176, 181, 187);
+}
+.about-title{
+  font-size: 50px;
+  background: linear-gradient(to right , #291651 , #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.navigation{
+  width: 40%;
+  padding: 20px;
+  background: linear-gradient(to left , rgb(41, 22, 81) , #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: poppins;
+  font-weight: 700;
+}
+.navigation:hover {
+  cursor: pointer;
+  transform: translateX(5px);
+    box-shadow: 0px 0px 30px rgb(107, 76, 175); 
+}
+.learning-title{
+  color: white;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.html-progress-bar , .css-progress-bar , .bootstrap-progress-bar , .js-progress-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+color: #fff;
+font-family: poppins;
+}
+.html-progress-bar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 13px solid #291651;
+  border-right-color: #fff; 
+}
+.css-progress-bar{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 13px solid #291651;
+  border-right-color: #fff; 
+
+}
+.bootstrap-progress-bar{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 13px solid #291651;
+  border-right-color: #fff; 
+
+}
+.js-progress-bar{
+  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 13px solid #291651;
+  border-right-color: #fff; 
+border-bottom-color: #fff;
+transform: rotate(-45deg);
+}
+.js-progress-bar::after {
+  content: attr(data-progress); /* Use the same "50%" dynamically */
+  position: absolute;
+  transform: rotate(45deg); /* Cancels out parent rotation */
 }
 .topics{
-    color:#8f8f8f;
-    text-decoration: underline;
+  height: 100%;
+  position: relative;
+  top: 50px;
+
 }
-.main{
-    height: 400px;
-    width: 400px;
+.topic{
+  display: flex;
+  justify-content: space-around;
 }
-nav a:hover{
-    background-color: grey;
-    border-radius: 5px;
+.learnings-info{
+  width: 50%;
 }
-.footer{
-    height: 70px;
-    width: 70px;
-    
+.learnings-info h1{
+  font-size: 50px;
+  background: linear-gradient(to right , #291651 , #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: poppins;
 }
-.progress{
-    height: 40px;
-    width: 40vw;
-    border-radius: 50px;
-    border: 2px solid white;
+.learnings-info p{
+  font-size: 20px;
+  color: #b0b5bb;
+  font-family: poppins;
 }
-.progress-bar{
-    border-radius: 1px 50px 50px 1px;
-    background-color:#3a3a3a;
-    color: black;
-    font-weight: bolder;
-    
+.learnings-info .navigation{
+  width: 20%;
+  padding: 10px;
 }
-.skill-top:hover{
-    background-color: grey;
-    border-radius: 10px;
+
+#contactForm{
+  height: 100%;
+  width: 100%;
 }
-/* h1{
-    font-size: 75px !important;
+.requirements{
+  height: 600px;
+  width: 600px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.h5{
-    font-size: 25px !important;
-} */
-/* .h1{
-    position: relative;
-    top: 200px;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 4rem;
+#contact h1{
+  font-size: 50px;
+  background: linear-gradient(to right , #291651 , #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: poppins;
+  text-align: center;
 }
-.h5{
-    position: relative;
-    top: 200px;
-    text-align: center; */
-    
-/* } */
+#contact p{
+  font-size: 20px;
+  color: #b0b5bb;
+  font-family: poppins;
+  text-align: center;
+}

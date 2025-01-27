@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    width: 100vw;
+    background:linear-gradient(220deg , #291651 5% , #000 40%) ;
+}
+
