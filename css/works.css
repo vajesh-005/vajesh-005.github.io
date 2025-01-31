@@ -5,6 +5,17 @@
 .container{
     height: 100%;
     width: 100vw;
-    background:linear-gradient(220deg , #291651 5% , #000 40%) ;
+    background:linear-gradient(220deg , #291651 5% , #000 40%);
+   
 }
+/* .sky{
+    width: 800px;
+}
+.heart{
 
+} */
+ .container img{
+    width: auto;
+    height: 700px;
+ }
+ 
