@@ -2,20 +2,64 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #000;
+}
 .container{
     height: 100%;
-    width: 100vw;
-    background:linear-gradient(220deg , #291651 5% , #000 40%);
-   
+    width: 90%;
+    margin-left: 80px;
+background-color: #282727 ;
+
 }
-/* .sky{
-    width: 800px;
+.sky{
+    width: 95%;
+    margin: 35px;
+    height: 700px;
 }
 .heart{
-
-} */
- .container img{
+    height: 900px;
     width: auto;
-    height: 700px;
- }
+    max-width: 550px;
+    margin: 50px;
+}
+.obito{
+    height: 900px;
+    width: auto;
+    max-width: 550px;
+    margin: 50px;
+}
+.jiraiya{
+    height: 900px;
+    width: auto;
+    max-width: 550px;
+    margin: 50px;
+}
+.kakashi{
+    height: 900px;
+    width: auto;
+    max-width: 550px;
+    margin: 50px;
+}
+.angel{
+    height: 900px;
+    width: auto;
+    max-width: 550px;
+    margin: 50px;
+}
+.minato{
+    height: 900px;
+    width: auto;
+    max-width: 550px;
+    margin: 50px;
+}
+.kira{
+    height: 900px;
+    width: auto;
+    max-width: 550px;
+    margin: 50px;
+    margin-left: 28%;
+}
+
+
  

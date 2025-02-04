@@ -481,6 +481,10 @@ textarea:-webkit-autofill:focus {
   align-items: center;
 }
 
+@media(max-width:480px){
+  
+}
+
 
 
 
